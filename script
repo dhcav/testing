@@ -2,25 +2,4 @@
 
 # Created by Damian Cavanagh in 2023
 #
-# Script for usage of Shortcuts in Jamf Self Service for macOS
-#
-# It will:
-#  1. Check if a Shortcut is installed
-#  2. Install if not, or
-#  3. Run if so
-#
-#
-# Parameters for Jamf Pro policy:
-#  $4 - Shortcut name (plain text including spaces, special characters)
-#     - used for querying list of installed Shortcuts and is URL-encoded 
-#       to form part of Run Shortcut URL
-#  $5 - URL to install Shortcut if not present
-#     - can be iCloud, other http or local file; adapt as necessary
-#  - above has been changed for Jamf-free testing purposes in this version
-
-shortcut="ClassroomDemoContent01"
-list="/usr/bin/shortcuts/ list" 
-shortcutURLEncoded="--data-urlencode $shortcut"
-icloudLink="https://www.icloud.com/shortcuts/938dac89eabc4c05bc0bc17cc3b8c77e"
-
-[[ $list =~ (^|[[:space:]])$shortcut($|[[:space:]]) ]] && open -a Shortcuts $icloudLink || open shortcuts://run-shortcut?name=$shortcut
+# Script for testing with Shortcuts - it's meant to be basically empty!
