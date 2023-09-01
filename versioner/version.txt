@@ -1,5 +1,5 @@
 {
   "version":"1.1",
-  "message":"Improved error handling and fixed issue with exporting to PDF."
+  "message":"Improved error handling and fixed issue with exporting to PDF",
   "link":"https://github.com/dhcav/ShortcutsForJamfPro/raw/main/checkOrUpdateLapsSettings/checkOrUpdateLapsSettings.jpa.mac.mm.shortcut"
 }
